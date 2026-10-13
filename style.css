@@ -406,6 +406,49 @@
       gap: 8px;
     }
 
+    .skill-tags .tech-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      max-width: 100%;
+      min-height: 32px;
+      padding: 6px 10px;
+      border-radius: 7px;
+      line-height: 1.35;
+    }
+
+    .tech-icon {
+      display: block;
+      flex: 0 0 17px;
+      width: 17px;
+      height: 17px;
+      object-fit: contain;
+    }
+
+    .tech-icon.line-icon {
+      fill: none;
+      stroke: currentColor;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 1.7;
+    }
+
+    .tech-item-detailed {
+      align-items: flex-start;
+    }
+
+    .tech-copy {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .tech-copy small {
+      color: var(--muted);
+      font-size: 10px;
+      line-height: 1.25;
+    }
+
     .tag {
       display: inline-block;
       color: #d9e2ef;
