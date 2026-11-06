@@ -19,6 +19,16 @@
   />
 
   <meta name="author" content="Vincent Dave Te">
+  <link rel="canonical" href="https://davete0302.github.io/te_portfolio/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Vincent Dave Te | Flutter Developer &amp; Software Engineer">
+  <meta property="og:description" content="7+ years in mobile development. Flutter, offline-first business applications, and connected systems across Android, iOS, and Windows.">
+  <meta property="og:url" content="https://davete0302.github.io/te_portfolio/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Vincent Dave Te | Flutter Developer">
+  <meta name="twitter:description" content="Flutter engineering for business applications. Explore selected work, experience, and résumé.">
+
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,24 +42,26 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
   <!-- Navigation -->
   <header class="topbar">
     <nav class="nav container" aria-label="Main navigation">
       <a class="brand" href="#home">Vincent Dave Te<span>.</span></a>
 
-      <ul class="nav-links">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-links">Menu <span aria-hidden="true">☰</span></button>
+      <ul class="nav-links" id="main-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#featured-projects">Featured work</a></li>
         <li><a href="#case-study">Case studies</a></li>
         <li><a class="nav-cta" href="#contact">Contact me ↗</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
+  <main id="main-content" tabindex="-1">
 
     <!-- Hero -->
     <section class="hero" id="home">
@@ -58,23 +70,21 @@
 
           <div class="availability">
             <span class="status-dot"></span>
-            Flutter-focused mobile developer
+            Flutter Developer / Software Engineer
           </div>
 
           <p class="eyebrow mono">HELLO, I'M VINCENT DAVE TE</p>
 
           <h1>
-            I build mobile apps that
-            <span>work in the real world.</span>
+            Flutter engineering.
+            <span>Built for business.</span>
           </h1>
 
           <p class="hero-description">
-            Mobile developer with 7+ years of experience building production
-            applications across Android, iOS, Windows, and web. Specializing
-            in Flutter and Dart, with hands-on experience developing
-            offline-first POS systems, integrating APIs and real-time services,
-            and building reliable applications that support real-world
-            business operations.
+            Mobile developer with 7+ years of experience across Android, iOS,
+            and Windows, specializing in Flutter and Dart. I build and maintain
+            business applications with offline-first workflows, SQLite
+            synchronization, and REST API integrations.
           </p>
 
           <div class="hero-meta">
@@ -83,8 +93,12 @@
           </div>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects">
+            <a class="button button-primary" href="#featured-projects">
               Explore my work ↗
+            </a>
+
+            <a class="button button-secondary" href="assets/resume.pdf" download>
+              Download Résumé
             </a>
 
             <a class="button button-secondary" href="#contact">
@@ -100,6 +114,7 @@
               GitHub ↗
             </a>
           </div>
+          <p class="hero-social"><a href="https://www.linkedin.com/in/vincent-dave-te-6423a1203/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><span aria-hidden="true">/</span><a href="mailto:davete36@gmail.com">davete36@gmail.com ↗</a></p>
         </div>
 
         <div class="quick-facts">
@@ -114,159 +129,48 @@
           </div>
 
           <div class="fact">
-            <span class="fact-number">Android · iOS · Web · Windows</span>
+            <span class="fact-number">Android · iOS · Windows</span>
             <span class="fact-label">Cross-platform development experience</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- About -->
-    <section class="section" id="about">
+    <!-- Featured projects: summaries complement the complete project archive below. -->
+    <section class="section" id="featured-projects">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow mono">01 / ABOUT</p>
-          <h2>I build mobile systems that do more than display data.</h2>
+          <p class="eyebrow mono">SELECTED WORK</p>
+          <h2>Business applications I've helped build.</h2>
+          <p class="section-lead">Selected work showing Flutter engineering, connected systems, and independent mobile development.</p>
         </div>
-
-        <div class="about-grid">
-          <div class="about-copy">
-            <p>
-              I'm a mobile developer with 7+ years of experience building and
-              maintaining production applications, from customer-facing mobile
-              apps to business-critical systems.
-            </p>
-
-            <p>
-              My primary focus is Flutter and Dart. I've worked on POS systems
-              with offline transaction handling and synchronization,
-              self-service kiosks, queueing systems, and applications for
-              delivery, fintech, and telemedicine. My work goes beyond UI
-              development — I've implemented local data persistence, API
-              integrations, real-time communication, and integrations between
-              separate applications and services.
-            </p>
-
-            <p>
-              I take ownership of features from implementation and integration
-              through debugging, maintenance, and release. I'm comfortable
-              working independently on mobile development tasks while
-              collaborating with backend developers and other teams to deliver
-              complete, working solutions.
-            </p>
-          </div>
-
-          <aside class="about-note">
-            <h3>What I bring</h3>
-
-            <ul>
-              <li><strong>Mobile engineering:</strong> Flutter, Dart, React Native, and native Android</li>
-              <li><strong>Offline-first systems:</strong> SQLite, local persistence, and transaction synchronization</li>
-              <li><strong>System integration:</strong> REST APIs, TCP communication, and real-time messaging</li>
-              <li><strong>Application functionality:</strong> Payments, authentication, notifications, maps, and business workflows</li>
-              <li><strong>End-to-end ownership:</strong> Feature development, debugging, maintenance, and releases</li>
-            </ul>
-          </aside>
+        <div class="projects-grid featured-projects-grid">
+          <article class="project-card">
+            <div class="project-top"><span class="project-index">FEATURED_01</span><span class="project-type">Offline-first POS</span></div>
+            <div class="system-flow" aria-label="Architecture summary: checkout, local SQLite storage, then background synchronization"><span>Checkout</span><b aria-hidden="true">→</b><span>SQLite</span><b aria-hidden="true">→</b><span>Background sync</span></div>
+            <h3>Sirius POS</h3>
+            <p>As primary developer, I built core POS workflows in a shared Flutter codebase for Android and Windows. SQLite persistence keeps transaction processing independent of continuous connectivity; background synchronization handles uploads, retries, and failed-upload tracking. I also implemented reporting and integrations with ordering and calculation applications. Awaiting release.</p>
+            <div class="project-tech"><span class="tag featured">Flutter</span><span class="tag">Provider</span><span class="tag">SQLite</span><span class="tag">REST APIs</span></div>
+            <a class="project-link" href="#case-study">Read the engineering case study ↓</a>
+          </article>
+          <article class="project-card">
+            <div class="project-top"><span class="project-index">FEATURED_02</span><span class="project-type">Windows ordering</span></div>
+            <p class="feature-platform">WINDOWS · CONNECTED ORDERING</p>
+            <h3>Self-Service Kiosk</h3>
+            <p>Developed customer ordering features in a Flutter Windows kiosk and integrated orders with Sirius POS for importing and transaction processing. This work connects a separate ordering application with the POS workflow.</p>
+            <div class="project-tech"><span class="tag featured">Flutter</span><span class="tag">Windows</span><span class="tag">POS integration</span></div>
+            <a class="project-link" href="#project-kiosk">View project details ↓</a>
+          </article>
+          <article class="project-card">
+            <div class="project-top"><span class="project-index">FEATURED_03</span><span class="project-type">Independent development</span></div>
+            <p class="feature-platform">REACT NATIVE · CLIENT APPLICATION</p>
+            <h3>ServicePro Client</h3>
+            <p>Independently developed the client app for a services platform, implementing service discovery, booking and tracking, maps, notifications, and real-time communication. Integrated Google and Facebook sign-in through Firebase Authentication.</p>
+            <div class="project-tech"><span class="tag">React Native</span><span class="tag">Redux</span><span class="tag">Firebase</span><span class="tag">Google Maps</span></div>
+            <a class="project-link" href="#project-servicepro">View project details ↓</a>
+          </article>
         </div>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section class="section" id="skills">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow mono">02 / TECH STACK</p>
-          <h2>Tools I work with.</h2>
-        </div>
-
-        <div class="skills-grid">
-
-          <div class="skill-card">
-            <h3>Mobile Development</h3>
-            <div class="skill-tags">
-              <span class="tag tech-item featured"><img class="tech-icon" src="assets/icons/flutter.svg" alt="" aria-hidden="true">Flutter</span>
-              <span class="tag tech-item featured"><img class="tech-icon" src="assets/icons/dart.svg" alt="" aria-hidden="true">Dart</span>
-              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/react.svg" alt="" aria-hidden="true">React Native</span>
-              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/expo.svg" alt="" aria-hidden="true">Expo</span>
-              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/android.svg" alt="" aria-hidden="true">Android</span>
-              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/ionic.svg" alt="" aria-hidden="true">Ionic</span>
-              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/angular.svg" alt="" aria-hidden="true">Angular</span>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <h3>State Management</h3>
-            <div class="skill-tags">
-              <span class="tag tech-item featured"><svg class="tech-icon line-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 20 7.5v9L12 21l-8-4.5v-9L12 3Z"/><path d="m4.3 7.7 7.7 4.5 7.7-4.5M12 21v-8.8"/></svg>Provider</span>
-              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/redux.svg" alt="" aria-hidden="true">Redux</span>
-              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/mobx.svg" alt="" aria-hidden="true">MobX</span>
-              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/dart.svg" alt="" aria-hidden="true">RxDart</span>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <h3>UI & Navigation</h3>
-            <div class="skill-tags">
-              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/react.svg" alt="" aria-hidden="true">React Navigation</span>
-              <span class="tag tech-item"><svg class="tech-icon line-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 4v16M9 9h12"/></svg>UI-Kitten</span>
-              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/react.svg" alt="" aria-hidden="true">React Native Paper</span>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <h3>Backend & Integrations</h3>
-            <div class="skill-tags">
-              <span class="tag tech-item"><svg class="tech-icon line-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 8-4 4 4 4m8-8 4 4-4 4m-3-12-2 16"/></svg>REST APIs</span>
-              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/graphql.svg" alt="" aria-hidden="true">GraphQL</span>
-              <span class="tag tech-item featured"><img class="tech-icon" src="assets/icons/firebase.svg" alt="" aria-hidden="true">Firebase</span>
-              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/firebase.svg" alt="" aria-hidden="true">Firebase Cloud Messaging</span>
-              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/firebase.svg" alt="" aria-hidden="true">Firestore</span>
-              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/pusher.svg" alt="" aria-hidden="true">Pusher</span>
-              <span class="tag tech-item"><svg class="tech-icon line-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="m10.8 6.6-4.6 10m7-10 4.6 10M7 19h10"/></svg>WebSockets</span>
-              <span class="tag tech-item"><svg class="tech-icon line-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9m-8 12h4"/></svg>OneSignal</span>
-              <span class="tag tech-item"><svg class="tech-icon line-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="12" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="18" cy="18" r="2"/><path d="m8 11 8-4m-8 6 8 4"/></svg>TCP</span>
-              <span class="tag tech-item"><svg class="tech-icon line-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20m-15 5h4"/></svg>Payment Gateway Integration</span>
-              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/googlemaps.svg" alt="" aria-hidden="true">Google Maps APIs</span>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <h3>Databases & Local Storage</h3>
-            <div class="skill-tags">
-              <span class="tag tech-item featured tech-item-detailed"><img class="tech-icon" src="assets/icons/sqlite.svg" alt="" aria-hidden="true"><span class="tech-copy"><span>SQLite</span></span></span>
-              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/mysql.svg" alt="" aria-hidden="true">MySQL</span>
-              <span class="tag tech-item tech-item-detailed"><svg class="tech-icon line-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="m19.4 15 .1.1 1.4 1.1-1.4 2.4-1.7-.7a8 8 0 0 1-1.7 1l-.3 1.8h-2.8l-.3-1.8a8 8 0 0 1-1.7-1l-1.7.7-1.4-2.4 1.4-1.1a8 8 0 0 1 0-2l-1.4-1.1 1.4-2.4 1.7.7a8 8 0 0 1 1.7-1l.3-1.8h2.8l.3 1.8a8 8 0 0 1 1.7 1l1.7-.7 1.4 2.4-1.4 1.1a8 8 0 0 1 0 2Z"/></svg><span class="tech-copy"><span>SharedPreferences</span><small>Local key-value storage</small></span></span>
-              <span class="tag tech-item tech-item-detailed"><svg class="tech-icon line-icon" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/><rect x="14" y="14" width="8" height="7" rx="1.5"/><path d="M16 14v-2a2 2 0 0 1 4 0v2"/></svg><span class="tech-copy"><span>SQLCipher</span><small>SQLite encryption extension</small></span></span>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <h3>Languages & Developer Tools</h3>
-            <div class="skill-tags">
-              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/javascript.svg" alt="" aria-hidden="true">JavaScript</span>
-              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/typescript.svg" alt="" aria-hidden="true">TypeScript</span>
-              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/java.svg" alt="" aria-hidden="true">Java</span>
-              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/git.svg" alt="" aria-hidden="true">Git</span>
-              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/github.svg" alt="" aria-hidden="true">GitHub</span>
-              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/gitlab.svg" alt="" aria-hidden="true">GitLab</span>
-              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/bitbucket.svg" alt="" aria-hidden="true">Bitbucket</span>
-              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/npm.svg" alt="" aria-hidden="true">npm</span>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <h3>Encryption & Security</h3>
-            <div class="skill-tags">
-              <span class="tag tech-item"><svg class="tech-icon line-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="m11 12 9-9m-3 3 3 3m-6 0 3 3"/></svg>JWT Authentication</span>
-              <span class="tag tech-item"><svg class="tech-icon line-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2m12-13 2 2 4-4"/><circle cx="10" cy="7" r="4"/></svg>OAuth 2.0</span>
-              <span class="tag tech-item"><svg class="tech-icon line-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="m11 12 9-9m-3 3 3 3m-6 0 3 3"/></svg>Secure Token Storage</span>
-              <span class="tag tech-item"><svg class="tech-icon line-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/><path d="m9 12 2 2 4-4"/></svg>HTTPS/TLS</span>
-              <span class="tag tech-item"><svg class="tech-icon line-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/><path d="m9 12 2 2 4-4"/></svg>API Authentication &amp; Authorization</span>
-              <span class="tag tech-item"><svg class="tech-icon line-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="m11 12 9-9m-3 3 3 3m-6 0 3 3"/></svg>Android Keystore / iOS Keychain</span>
-            </div>
-          </div>
-
-        </div>
+        <p class="featured-projects-more"><a class="project-link" href="#projects">Browse all 13 projects ↓</a></p>
       </div>
     </section>
 
@@ -274,7 +178,7 @@
     <section class="section" id="experience">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow mono">03 / EXPERIENCE</p>
+          <p class="eyebrow mono">EXPERIENCE</p>
           <h2>Where I've worked.</h2>
         </div>
 
@@ -292,19 +196,22 @@
 
             <ul>
               <li>
-                Developed Flutter applications for Android and Windows, including a tablet-based POS system with ERP features for inventory management, sales, and reporting, and a Windows self-service kiosk.
+                Developed and maintained Flutter applications for Android and Windows, using a shared codebase for Sirius POS and building a Windows self-service kiosk. POS work includes ERP features for inventory, sales, and reporting; Sirius POS is awaiting release.
               </li>
               <li>
-                Implemented POS checkout, SQLite-based offline transaction storage, data synchronization, and reporting workflows.
+                Implemented POS checkout and SQLite transaction persistence before background synchronization, with retries and failed-upload tracking so local processing does not depend on continuous internet access.
               </li>
               <li>
                 Built the Sirius Computation Engine from scratch for discount calculations, loyalty points, and gift purchases using TCP communication and APIs.
               </li>
               <li>
-                Integrated kiosk orders with the POS and enhanced queueing and kitchen display system functionality.
+                Connected kiosk ordering with POS order imports and transaction processing, integrated REST APIs and reporting applications, and developed and maintained the production Queueing System and kitchen display functionality.
               </li>
               <li>
-                Used Provider for state management and modified selected existing Bluetooth printing functionality.
+                Used Provider for state management, worked on Windows builds and deployment configuration, and modified selected existing Bluetooth printing functionality.
+              </li>
+              <li>
+                Investigated production-reported issues by reproducing defects, identifying root causes, implementing targeted fixes, and verifying expected application behavior.
               </li>
             </ul>
 
@@ -384,11 +291,11 @@
     <section class="section" id="case-study">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow mono">04 / CASE STUDY</p>
+          <p class="eyebrow mono">CASE STUDY</p>
           <h2>Sirius POS</h2>
           <p class="section-lead">
             A BIR-approved, offline-first point-of-sale system for retail
-            and restaurant operations, built for Android and Windows.
+            and restaurant operations, built for Android and Windows and awaiting release.
           </p>
         </div>
 
@@ -405,7 +312,7 @@
               </p>
             </div>
 
-            <span class="case-study-status">Internal product · Not publicly released</span>
+            <span class="case-study-status">Awaiting release · Internal product</span>
           </div>
 
           <dl class="case-study-meta">
@@ -427,23 +334,28 @@
             </div>
           </dl>
 
+          <ol class="case-story" aria-label="Sirius POS engineering overview">
+            <li><h4>Connectivity constraint</h4><p>Checkout must support local transaction processing without a continuous internet connection.</p></li>
+            <li><h4>My implementation</h4><p>Built Flutter and SQLite workflows that persist transactions before optional background upload, with retries and failed-upload tracking.</p></li>
+            <li><h4>Engineering approach</h4><p>Shared local storage and transaction logic support standalone and API-connected modes across Android and Windows. Sirius POS is awaiting release.</p></li>
+          </ol>
           <div class="case-study-diagrams">
             <figure class="case-study-diagram">
               <img
                 src="assets/img/mermaid-diagram.png"
-                alt="POS operating modes showing local transaction persistence, standalone operation, and queued background synchronization with retries."
+                alt="Checkout persists a transaction locally, then optionally queues it for background upload with failed-attempt tracking and retry limits." width="1286" height="2974"
                 loading="lazy"
               >
-              <figcaption>Operating modes and offline transaction synchronization</figcaption>
+              <figcaption>Checkout, upload queue, and retry handling · <a href="assets/img/mermaid-diagram.png" target="_blank" rel="noopener noreferrer">Open full-size diagram ↗</a></figcaption>
             </figure>
 
             <figure class="case-study-diagram">
               <img
                 src="assets/img/mermaid-diagram%20(1).png"
-                alt="Checkout flow showing cart building, price and payment processing, local transaction persistence, and optional backend synchronization with retry tracking."
+                alt="Standalone mode continues local operations; API-connected mode uses a pending upload queue and background synchronization." width="1506" height="1878"
                 loading="lazy"
               >
-              <figcaption>Checkout, local persistence, and upload workflow</figcaption>
+              <figcaption>Standalone and API-connected operating modes · <a href="assets/img/mermaid-diagram%20(1).png" target="_blank" rel="noopener noreferrer">Open full-size diagram ↗</a></figcaption>
             </figure>
           </div>
 
@@ -498,7 +410,7 @@
           </div>
 
           <p class="case-study-disclaimer">
-            This internal product has not been publicly released. This case study
+            Sirius POS is awaiting release and is not presented here as a production deployment. This case study
             omits proprietary source code, private endpoints, credentials, and
             sensitive deployment configuration.
           </p>
@@ -510,7 +422,7 @@
     <section class="section" id="case-study-dockoto">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow mono">05 / CASE STUDY</p>
+          <p class="eyebrow mono">CASE STUDY</p>
           <h2>DocKoTo</h2>
           <p class="section-lead">
             A telehealth product for connecting patients with medical specialists.
@@ -527,8 +439,7 @@
               <h3>Helping patients and doctors stay connected.</h3>
               <p>
                 As a mobile developer, I worked on the Android and iOS apps.
-                I did not implement appointment booking or video calling.
-                My work covered chat, file uploads, push-notification routing,
+                My contributions covered chat, file uploads, push-notification routing,
                 profiles, gallery functionality, and consultation history.
               </p>
             </div>
@@ -553,13 +464,18 @@
             </div>
           </dl>
 
+          <ol class="case-story" aria-label="DocKoTo engineering overview">
+            <li><h4>Communication needs</h4><p>Patients and doctors need in-app messaging, document sharing, and access to the consultation associated with a notification.</p></li>
+            <li><h4>My implementation</h4><p>Developed React Native chat and uploads with Pusher, Firebase Cloud Messaging notification handling, and appointment-specific navigation through React Navigation.</p></li>
+            <li><h4>Contribution scope</h4><p>Also implemented Firebase social authentication, profiles, gallery, and consultation history. Appointment booking and video calling were outside my contribution.</p></li>
+          </ol>
           <div class="case-study-grid">
             <section class="case-study-detail">
               <h4>Real-time chat &amp; document sharing</h4>
               <ul>
                 <li>Developed in-app chat to support communication between patients and doctors.</li>
                 <li>Integrated document uploads within chat conversations so users could share files in the app.</li>
-                <li>Worked with Pusher to support real-time messaging.</li>
+                <li>Integrated Pusher to support real-time patient–doctor messaging in the React Native app.</li>
               </ul>
             </section>
 
@@ -615,12 +531,160 @@
       </div>
     </section>
 
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow mono">TECH STACK</p>
+          <h2>Tools I work with.</h2>
+        </div>
+
+        <div class="skills-grid">
+
+          <div class="skill-card">
+            <h3>Mobile Development</h3>
+            <div class="skill-tags">
+              <span class="tag tech-item featured"><img class="tech-icon" src="assets/icons/flutter.svg" alt="" aria-hidden="true" width="17" height="17">Flutter</span>
+              <span class="tag tech-item featured"><img class="tech-icon" src="assets/icons/dart.svg" alt="" aria-hidden="true" width="17" height="17">Dart</span>
+              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/react.svg" alt="" aria-hidden="true" width="17" height="17">React Native</span>
+              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/expo.svg" alt="" aria-hidden="true" width="17" height="17">Expo</span>
+              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/android.svg" alt="" aria-hidden="true" width="17" height="17">Android</span>
+              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/ionic.svg" alt="" aria-hidden="true" width="17" height="17">Ionic</span>
+              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/angular.svg" alt="" aria-hidden="true" width="17" height="17">Angular</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h3>State Management</h3>
+            <div class="skill-tags">
+              <span class="tag tech-item featured"><svg class="tech-icon line-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 20 7.5v9L12 21l-8-4.5v-9L12 3Z"/><path d="m4.3 7.7 7.7 4.5 7.7-4.5M12 21v-8.8"/></svg>Provider</span>
+              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/redux.svg" alt="" aria-hidden="true" width="17" height="17">Redux</span>
+              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/mobx.svg" alt="" aria-hidden="true" width="17" height="17">MobX</span>
+              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/dart.svg" alt="" aria-hidden="true" width="17" height="17">RxDart</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h3>UI & Navigation</h3>
+            <div class="skill-tags">
+              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/react.svg" alt="" aria-hidden="true" width="17" height="17">React Navigation</span>
+              <span class="tag tech-item"><svg class="tech-icon line-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 4v16M9 9h12"/></svg>UI-Kitten</span>
+              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/react.svg" alt="" aria-hidden="true" width="17" height="17">React Native Paper</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h3>Backend & Integrations</h3>
+            <div class="skill-tags">
+              <span class="tag tech-item"><svg class="tech-icon line-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 8-4 4 4 4m8-8 4 4-4 4m-3-12-2 16"/></svg>REST APIs</span>
+              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/graphql.svg" alt="" aria-hidden="true" width="17" height="17">GraphQL</span>
+              <span class="tag tech-item featured"><img class="tech-icon" src="assets/icons/firebase.svg" alt="" aria-hidden="true" width="17" height="17">Firebase</span>
+              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/firebase.svg" alt="" aria-hidden="true" width="17" height="17">Firebase Cloud Messaging</span>
+              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/firebase.svg" alt="" aria-hidden="true" width="17" height="17">Firestore</span>
+              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/pusher.svg" alt="" aria-hidden="true" width="17" height="17">Pusher</span>
+              <span class="tag tech-item"><svg class="tech-icon line-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="m10.8 6.6-4.6 10m7-10 4.6 10M7 19h10"/></svg>WebSockets</span>
+              <span class="tag tech-item"><svg class="tech-icon line-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9m-8 12h4"/></svg>OneSignal</span>
+              <span class="tag tech-item"><svg class="tech-icon line-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="12" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="18" cy="18" r="2"/><path d="m8 11 8-4m-8 6 8 4"/></svg>TCP</span>
+              <span class="tag tech-item"><svg class="tech-icon line-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20m-15 5h4"/></svg>Payment Gateway Integration</span>
+              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/googlemaps.svg" alt="" aria-hidden="true" width="17" height="17">Google Maps APIs</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h3>Databases & Local Storage</h3>
+            <div class="skill-tags">
+              <span class="tag tech-item featured tech-item-detailed"><img class="tech-icon" src="assets/icons/sqlite.svg" alt="" aria-hidden="true" width="17" height="17"><span class="tech-copy"><span>SQLite</span></span></span>
+              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/mysql.svg" alt="" aria-hidden="true" width="17" height="17">MySQL</span>
+              <span class="tag tech-item tech-item-detailed"><svg class="tech-icon line-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="m19.4 15 .1.1 1.4 1.1-1.4 2.4-1.7-.7a8 8 0 0 1-1.7 1l-.3 1.8h-2.8l-.3-1.8a8 8 0 0 1-1.7-1l-1.7.7-1.4-2.4 1.4-1.1a8 8 0 0 1 0-2l-1.4-1.1 1.4-2.4 1.7.7a8 8 0 0 1 1.7-1l.3-1.8h2.8l.3 1.8a8 8 0 0 1 1.7 1l1.7-.7 1.4 2.4-1.4 1.1a8 8 0 0 1 0 2Z"/></svg><span class="tech-copy"><span>SharedPreferences</span><small>Local key-value storage</small></span></span>
+              <span class="tag tech-item tech-item-detailed"><svg class="tech-icon line-icon" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/><rect x="14" y="14" width="8" height="7" rx="1.5"/><path d="M16 14v-2a2 2 0 0 1 4 0v2"/></svg><span class="tech-copy"><span>SQLCipher</span><small>SQLite encryption extension</small></span></span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h3>Languages & Developer Tools</h3>
+            <div class="skill-tags">
+              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/javascript.svg" alt="" aria-hidden="true" width="17" height="17">JavaScript</span>
+              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/typescript.svg" alt="" aria-hidden="true" width="17" height="17">TypeScript</span>
+              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/java.svg" alt="" aria-hidden="true" width="17" height="17">Java</span>
+              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/git.svg" alt="" aria-hidden="true" width="17" height="17">Git</span>
+              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/github.svg" alt="" aria-hidden="true" width="17" height="17">GitHub</span>
+              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/gitlab.svg" alt="" aria-hidden="true" width="17" height="17">GitLab</span>
+              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/bitbucket.svg" alt="" aria-hidden="true" width="17" height="17">Bitbucket</span>
+              <span class="tag tech-item"><img class="tech-icon" src="assets/icons/npm.svg" alt="" aria-hidden="true" width="17" height="17">npm</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h3>Encryption & Security</h3>
+            <div class="skill-tags">
+              <span class="tag tech-item"><svg class="tech-icon line-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="m11 12 9-9m-3 3 3 3m-6 0 3 3"/></svg>JWT Authentication</span>
+              <span class="tag tech-item"><svg class="tech-icon line-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2m12-13 2 2 4-4"/><circle cx="10" cy="7" r="4"/></svg>OAuth 2.0</span>
+              <span class="tag tech-item"><svg class="tech-icon line-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="m11 12 9-9m-3 3 3 3m-6 0 3 3"/></svg>Secure Token Storage</span>
+              <span class="tag tech-item"><svg class="tech-icon line-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/><path d="m9 12 2 2 4-4"/></svg>HTTPS/TLS</span>
+              <span class="tag tech-item"><svg class="tech-icon line-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/><path d="m9 12 2 2 4-4"/></svg>API Authentication &amp; Authorization</span>
+              <span class="tag tech-item"><svg class="tech-icon line-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="m11 12 9-9m-3 3 3 3m-6 0 3 3"/></svg>Android Keystore / iOS Keychain</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow mono">ABOUT</p>
+          <h2>I build mobile systems that do more than display data.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>
+              I'm a mobile developer with 7+ years of experience building and
+              maintaining production applications, from customer-facing mobile
+              apps to business-critical systems.
+            </p>
+
+            <p>
+              My primary focus is Flutter and Dart, with development and maintenance
+              experience across Android, iOS, and Windows. My work extends beyond
+              UI: shared Flutter code, platform-specific integrations, Windows
+              desktop builds, deployment, and troubleshooting platform-specific
+              issues. Projects include POS and ERP workflows, kiosks, queueing,
+              delivery, fintech, and telemedicine applications.
+            </p>
+
+            <p>
+              I take features through implementation, integration, troubleshooting,
+              maintenance, and release. I work independently on mobile development
+              and collaborate with backend developers to connect ordering,
+              transaction, calculation, and reporting workflows through APIs
+              and application-to-application data exchange.
+            </p>
+          </div>
+
+          <aside class="about-note">
+            <h3>What I bring</h3>
+
+            <ul>
+              <li><strong>Mobile engineering:</strong> Flutter, Dart, React Native, and native Android</li>
+              <li><strong>Offline-first systems:</strong> SQLite, local persistence, and transaction synchronization</li>
+              <li><strong>System integration:</strong> REST APIs, TCP communication, and real-time messaging</li>
+              <li><strong>Application functionality:</strong> Payments, authentication, notifications, maps, and business workflows</li>
+              <li><strong>End-to-end ownership:</strong> Feature development, debugging, maintenance, and releases</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
     <!-- Projects -->
     <section class="section" id="projects">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow mono">06 / THINGS I'VE WORKED ON</p>
-          <h2>Things I've Worked On</h2>
+          <p class="eyebrow mono">THINGS I'VE WORKED ON</p>
+          <h2>All projects &amp; contributions</h2>
 
           <p class="section-lead">
             Selected mobile applications and connected systems across
@@ -644,7 +708,7 @@
               Tablet-based Flutter point-of-sale application. My contributions
               included checkout, local transaction storage and synchronization,
               and reporting; I also modified selected existing printing
-              functionality.
+              functionality. Awaiting release.
             </p>
 
             <div class="project-tech">
@@ -655,7 +719,7 @@
               <span class="tag">Bluetooth Printing</span>
             </div>
 
-            <a class="project-link" href="#case-study">View case study ↓</a>
+            <a class="project-link" href="#case-study">View case study ↑</a>
           </article>
 
           <!-- Project 2 -->
@@ -668,9 +732,10 @@
             <h3>Queueing System</h3>
 
             <p>
-              Developed a central server and route registry for communication
-              between queueing systems, with request logging, additional
-              features, and bug fixes.
+              Actively develop and maintain this production system. Implemented
+              a central server and route registry for communication between
+              queueing systems, with request logging, additional features,
+              and bug fixes.
             </p>
 
             <div class="project-tech">
@@ -679,11 +744,11 @@
               <span class="tag">Request Logging</span>
             </div>
 
-            <span class="project-link disabled">Internal system</span>
+            <span class="project-link disabled">In production · Actively maintained</span>
           </article>
 
           <!-- Project 3 -->
-          <article class="project-card">
+          <article class="project-card" id="project-kiosk">
             <div class="project-top">
               <span class="project-index">PROJECT_03</span>
               <span class="project-type">Self-Service Ordering</span>
@@ -935,7 +1000,7 @@
           </article>
 
           <!-- Project 12 -->
-          <article class="project-card">
+          <article class="project-card" id="project-servicepro">
             <div class="project-top">
               <span class="project-index">PROJECT_12</span>
               <span class="project-type">Services Platform</span>
@@ -944,8 +1009,8 @@
             <h3>ServicePro Client &amp; Rider</h3>
 
             <p>
-              Client and rider apps for a services platform. The client app
-              supports service discovery and booking, booking tracking,
+              Client and rider apps for a services platform. I independently
+              developed ServicePro Client. The client app supports service discovery and booking, booking tracking,
               notifications, maps, and real-time communication. Integrated
               Google and Facebook sign-in with Firebase Authentication.
             </p>
@@ -1009,7 +1074,7 @@
     <section class="section" id="education">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow mono">07 / EDUCATION</p>
+          <p class="eyebrow mono">EDUCATION</p>
           <h2>Academic background.</h2>
         </div>
 
@@ -1030,14 +1095,14 @@
         <div class="contact-panel">
 
           <div>
-            <p class="eyebrow mono">08 / CONTACT</p>
+            <p class="eyebrow mono">CONTACT</p>
 
             <h2>Let's build something useful.</h2>
 
             <p>
-              I'm interested in remote opportunities where I can
-              contribute my mobile development experience, strengthen
-              my Flutter expertise, and help ship reliable applications.
+              I'm open to remote Flutter Developer, Mobile Developer, and
+              Software Engineer roles, bringing experience in offline-first
+              business applications, integrations, troubleshooting, and maintenance.
             </p>
 
             <div style="margin-top: 25px;">
@@ -1051,6 +1116,10 @@
           </div>
 
           <div class="contact-links">
+            <a class="contact-link" href="assets/resume.pdf" download>
+              <span>Résumé</span>
+              <span>Download PDF ↓</span>
+            </a>
 
             <a
               class="contact-link"
@@ -1101,6 +1170,19 @@
   <script>
     document.getElementById("year").textContent =
       new Date().getFullYear();
+    const menuButton = document.querySelector('.nav-toggle');
+    const navigation = document.querySelector('.nav');
+    navigation.classList.add('menu-ready');
+    function closeMenu() { menuButton.setAttribute('aria-expanded', 'false'); }
+    menuButton.addEventListener('click', () => {
+      menuButton.setAttribute('aria-expanded', String(menuButton.getAttribute('aria-expanded') !== 'true'));
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => link.addEventListener('click', closeMenu));
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {
+        closeMenu(); menuButton.focus();
+      }
+    });
   </script>
 
 </body>
